@@ -12,58 +12,62 @@
 
       <form action="index.html" method="post">
         
-        <h1>Sign Up</h1>
+        <h1>The Code Review</h1>
+          <p>Signup for our newsletter</p>
+          <p>Get the latest news on how your code is doing right in your inbox</p>
+          <hr>
+          <hr>
         
         <fieldset>
           
-          <legend><span class="number">1</span> Your basic info</legend>
+          <legend>Contact Information</legend>
           
-          <label for="name">Name:</label>
+          <label for="name">Full Name</label>
           <input type="text" id="name" name="user_name">
           
-          <label for="mail">Email:</label>
+          <label for="mail">Emai Address</label>
           <input type="email" id="mail" name="user_email">
           
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="user_password">
-          
-          <label>Age:</label>
-          <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Under 13</label><br>
-          <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">13 or Older</label>
+          <label for="text">Phone Number</label>
+          <input type="text" id="phone" name="user_phone">
+            
+          <label for="text">Street Address</label>
+          <input type="text" id="address" name="user_address">
+        
+          <label for="text">City</label>
+          <input type="text" id="city" name="user_city">
+            
+          <label for="text">State</label>
+          <input type="text" id="state" name="user_state">
+            
+          <label for="text">Zip Code</label>
+          <input type="text" id="state" name="user_state">
+            
+          <hr>
+            
+          <h1>Newsletter</h1>
+            <p>Select the newsletters you would like to receive</p>
+            <input type="checkbox">HTML News<br>
+            <input type="checkbox">CSS News<br>
+            <input type="checkbox">JavaScript News<br>
+            
+            
+            
+            <p>Newletter format</p>
+          <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">HTML</label><br>
+          <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">Plain text</label>
+        
+            
+            
         
         </fieldset>
         
-        <fieldset>
-          
-          <legend><span class="number">2</span> Your profile</legend>
-          
-          <label for="bio">Biography:</label>
-          <textarea id="bio" name="user_bio"></textarea>
-          
-          <label for="job">Job role:</label>
-          <select id="job" name="user_job">
-            <optgroup label="Web">
-              <option value="frontend_developer">Front-End Developer</option>
-              <option value="php_developer">PHP Developer</option>
-              <option value="python_developer">Python Developer</option>
-              <option value="rails_developer">Rails Developer</option>
-              <option value="web_designer">Web Designer</option>
-              <option value="wordpress_developer">WordPress Developer</option>
-            </optgroup>
-            <optgroup label="Mobile">
-              <option value="android_developer">Android Developer</option>
-              <option value="ios_developer">iOS Developer</option>
-              <option value="mobile_designer">Mobile Designer</option>
-            </optgroup>
-            <optgroup label="Business">
-              <option value="business_owner">Business Owner</option>
-              <option value="freelancer">Freelancer</option>
-            </optgroup>
-          </select>
-        
-        </fieldset>
+          <p>Other topics you'd like to hear about</p>
+     
+        <textarea></textarea>
           
         <button type="submit">Sign Up</button>
+        
         
       </form>
       
