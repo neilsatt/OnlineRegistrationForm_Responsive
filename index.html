@@ -12,8 +12,8 @@
 
       <form action="index.html" method="post">
         
-        <h1>The Code Review</h1>
-          <p>Signup for our newsletter</p>
+        <header>The Code Review</header>
+          <h2>Signup for our newsletter</h2>
           <p>Get the latest news on how your code is doing right in your inbox</p>
           <hr>
           <hr>
@@ -23,10 +23,10 @@
           <legend>Contact Information</legend>
           
           <label for="name">Full Name</label>
-          <input type="text" id="name" name="user_name">
+          <input type="text" id="name" name="user_name" required placeholder="Required">
           
           <label for="mail">Emai Address</label>
-          <input type="email" id="mail" name="user_email">
+          <input type="email" id="mail" name="user_email" required placeholder="Required">
           
           <label for="text">Phone Number</label>
           <input type="text" id="phone" name="user_phone">
@@ -69,7 +69,11 @@
         <button type="submit">Sign Up</button>
         
         
+        
+        
       </form>
+        
+      <footer>Copyright The Code Review</footer>
       
     </body>
 </html>
