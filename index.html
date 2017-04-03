@@ -6,18 +6,23 @@
         <title>Sign Up Form</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/main.css">
+         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
 
-      <form action="index.html" method="post">
-        
-        <header>The Code Review</header>
-          <h2>Signup for our newsletter</h2>
-          <p>Get the latest news on how your code is doing right in your inbox</p>
+      
+
+           <div id="main-title">
+               <p>The Code Review</p>
+           </div>
+    
+          <h3>Signup for our newsletter</h3>
+          <p id="latest-news">Get the latest news on how your code is doing right in your inbox</p>
           <hr>
           <hr>
         
+        
+        <form action="index.html" method="post">
         <fieldset>
           
           <legend>Contact Information</legend>
@@ -25,7 +30,7 @@
           <label for="name">Full Name</label>
           <input type="text" id="name" name="user_name" required placeholder="Required">
           
-          <label for="mail">Emai Address</label>
+          <label for="email">Email Address</label>
           <input type="email" id="mail" name="user_email" required placeholder="Required">
           
           <label for="text">Phone Number</label>
@@ -38,33 +43,37 @@
           <input type="text" id="city" name="user_city">
             
           <label for="text">State</label>
-          <input type="text" id="state" name="user_state">
+          <select>
+            <option value="" disabled selected>Choose State</option>
+            <option value="colorado">Colorado</option>
+            <option value="portland">Portland</option>
+            <option value="washington">Washington</option>
+            <option value="california">California</option>
+         </select>
             
-          <label for="text">Zip Code</label>
-          <input type="text" id="state" name="user_state">
+          <label for="zipcode">Zip Code</label>
+          <input type="text" id="zipcode" name="user_zipcode"  style="width: 150px;">
             
           <hr>
             
           <h1>Newsletter</h1>
-            <p>Select the newsletters you would like to receive</p>
+            <p>Select the newsletters you would like to receive</p><br>
             <input type="checkbox">HTML News<br>
             <input type="checkbox">CSS News<br>
-            <input type="checkbox">JavaScript News<br>
+            <input type="checkbox">JavaScript News<br><br>
             
             
             
-            <p>Newletter format</p>
-          <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">HTML</label><br>
+          <p>Newletter format</p>
+          <input type="radio" id="html" value="html" name="html"><label class="light">HTML</label><br>
           <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">Plain text</label>
         
-            
-            
-        
+               
         </fieldset>
         
           <p>Other topics you'd like to hear about</p>
      
-        <textarea></textarea>
+        <textarea style="width: 250px;"></textarea>
           
         <button type="submit">Sign Up</button>
         

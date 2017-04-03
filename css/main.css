@@ -4,10 +4,18 @@
   box-sizing: border-box;
 }
 
+/* move main-text bock to top to the top */
+*, html {
+    margin:0;
+    padding:0;  
+}
+
 body {
   font-family: 'Nunito', sans-serif;
   color: #384047;
 }
+
+
 
 form {
   max-width: 300px;
@@ -17,20 +25,42 @@ form {
   border-radius: 8px;
 }
 
-header {
-    background: black;
+#main-title {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    text-align: center;
+    height: 60px;
+    background-color: black;
     color: white;
-    font-size: 1.3em;
-    width: 100%;
+}
+
+#main-title p{
+    position: relative;
+    top:18px;
 }
 
 h1 {
   margin: 0 0 30px 0;
   text-align: center;
+  
+}
+
+h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+      text-align: center;
+}
+
+#latest-news {
+     margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: dimgrey;
+    
 }
 
 input[type="text"],
-input[type="password"],
+input[type="name"],
 input[type="date"],
 input[type="datetime"],
 input[type="email"],
@@ -68,17 +98,14 @@ select {
 
 button {
   padding: 19px 39px 18px 39px;
-  color: #FFF;
-  background-color: #4bc970;
+  color: white;
+  background-color: lightseagreen;
   font-size: 18px;
   text-align: center;
   font-style: normal;
-  border-radius: 5px;
   width: 100%;
-  border: 1px solid #3ac162;
-  border-width: 1px 1px 3px;
-  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
   margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 /* Required text style */
@@ -87,7 +114,8 @@ button {
     
     font-size: .8em;
     font-style: italic;
-    padding-left: 150px;
+    text-align: right;
+    padding-right: 5px;
 }
 
 fieldset {
@@ -110,19 +138,13 @@ label.light {
   display: inline;
 }
 
-.number {
-  background-color: #5fcf80;
-  color: #fff;
-  height: 30px;
-  width: 30px;
-  display: inline-block;
-  font-size: 0.8em;
-  margin-right: 4px;
-  line-height: 30px;
-  text-align: center;
-  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
-  border-radius: 100%;
+footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
 }
+
+
 
 @media screen and (min-width: 480px) {
 
