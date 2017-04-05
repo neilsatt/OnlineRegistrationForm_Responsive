@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/* move main-text bock to top to the top */
+/* move main-text block to top to the page */
 *, html {
     margin:0;
     padding:0;  
@@ -54,14 +54,6 @@ form {
     height:55px;
 }
 
-h1 {
-  margin: 0 0 30px 0;
-  text-align: center;
-  
-}
-
-
-
 #topics-text-area{
      max-width: 260px;
     height: 100px;
@@ -78,13 +70,11 @@ h1 {
 
 input[type="text"],
 input[type="name"],
-input[type="date"],
-input[type="datetime"],
 input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="time"],
+input[type="telephone"],
+input[type="address"],
+input[type="city"],
+input[type="zipcode"],
 input[type="url"],
 textarea,
 select {
@@ -102,10 +92,12 @@ select {
   margin-bottom: 30px;
 }
 
+
 input[type="radio"],
 input[type="checkbox"] {
   margin: 0 4px 8px 0;
 }
+
 
 input[type="radio"]:checked, 
 input[type="checkbox"]:checked {
@@ -129,7 +121,7 @@ select {
 }
 
 button {
-  padding: 19px 39px 18px 39px;
+  padding: 10px 20px 20px 20px;
   color: white;
   background-color: lightseagreen;
   font-size: 1.3em;
@@ -139,13 +131,12 @@ button {
   margin-bottom: 10px;
   border-radius: 5px;
   max-width: 300px;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
-/* Required text style */
+/* Required/Placehoder text style */
 ::-webkit-input-placeholder { 
     color: grey; 
-    
     font-size: .8em;
     font-style: italic;
     text-align: right;
@@ -169,19 +160,24 @@ label {
   margin-bottom: 8px;
 }
 
+#zipcode {
+    width: 150px;
+}
+
 #topics {
 font-size: .9em;
 }
 
 footer {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    font-size: 1.0em;
     text-align: center;
     font-style:italic;
     color: lightgrey;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
-
+/* Media Query */
 
 @media screen and (min-width: 768px) {
 
